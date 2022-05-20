@@ -12,6 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Icon } from '@mui/material';
+import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
+
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,10 +39,16 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{backgroundColor: '#9f3133'}}>
       <Container maxWidth="xl" margin='0'>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <Icon sx={{ display: { xs: 'none',md: 'flex' }, 
+         width: 60,
+         height:60,
+         mr:0 }}>
+        <img src="redRose.ico"/>
+        </Icon>
+          
           <Typography
             variant="h6"
             noWrap
@@ -48,9 +57,11 @@ const ResponsiveAppBar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'monotone',
+              textTransform: 'uppercase',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.7rem',
+              lineheight: '14',
               color: 'inherit',
               textDecoration: 'none',
             }}
