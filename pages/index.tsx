@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import type { ReactElement } from 'react'
 import styles from '../styles/Home.module.css'
+import ResponsiveAppBar from './/components/AppBar.js'
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/redRose.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Silent Sins!</a>
+      <main>
+        <h1>
+        <ResponsiveAppBar></ResponsiveAppBar>
         </h1>
 
         <p className={styles.description}>
