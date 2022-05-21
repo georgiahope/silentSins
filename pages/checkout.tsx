@@ -17,6 +17,7 @@ import PaymentForm from './PaymentForm';
 import Review from './Review';
 import ResponsiveAppBar from './components/AppBar';
 import Head from 'next/head';
+import SilentSinsTheme from '../themes/theme'
 
 function Header(){
     return(
@@ -56,7 +57,16 @@ function getStepContent(step: number) {
   }
 }
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#9f3133',
+    },
+    secondary: {
+      main: '#ffff',
+    },
+  },
+});
 
 export default function Checkout() {
   const [activeStep, setActiveStep] = React.useState(0);
