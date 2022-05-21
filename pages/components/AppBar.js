@@ -16,11 +16,15 @@ import { Icon } from '@mui/material';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
+import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
+import AddressForm from '../checkout';
+import { Link } from 'react-router-dom';
 
 
-const pages = ['Products', 'Pricing', 'Contact Us'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+const pages = ['Products', 'Lookbook', 'Contact Us'];
+
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -179,6 +183,14 @@ const ResponsiveAppBar = () => {
                 {page}
               </Button>
             ))}
+          </Box>
+          
+          <Box>
+            
+              <a href="../checkout">
+                <ShoppingCartSharpIcon/>
+              </a>
+            
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
