@@ -19,6 +19,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import AddressForm from '../checkout';
 import { Link } from 'react-router-dom';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 
@@ -185,6 +186,14 @@ const ResponsiveAppBar = () => {
             ))}
           </Box>
           
+          <Box sx={{ flexGrow: 50, display: { xs: 'none', md: 'flex' } }}>
+
+              <a href="https://www.instagram.com/mysilentsins/">
+                <InstagramIcon/>
+              </a>
+
+          </Box>
+
           <Box>
             
               <a href="../checkout">
