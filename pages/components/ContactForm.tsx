@@ -2,6 +2,7 @@ import TextField from "@mui/material/TextField";
 import Button from '@mui/material/Button';
 import React from "react";
 import { useFormControls } from "./ContactFormControls";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const inputFieldValues = [
   {
@@ -23,6 +24,17 @@ const inputFieldValues = [
   }
 ];
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#9f3133',
+    },
+    secondary: {
+      main: '#ffff',
+    },
+  },
+});
+
 export const ContactForm = () => {
   const {
     handleInputValue,
@@ -32,6 +44,7 @@ export const ContactForm = () => {
   } = useFormControls();
 
   return (
+    <ThemeProvider theme={theme}>
     <form autoComplete="off" onSubmit={handleFormSubmit}>
       {inputFieldValues.map((inputFieldValue, index) => {
         return (
@@ -56,11 +69,12 @@ export const ContactForm = () => {
       <Button
         variant="contained"
         type="submit"
-        color="secondary"
+        color="primary"
         disabled={!formIsValid()}
       >
         Send Message
       </Button>
     </form>
+    </ThemeProvider>
   );
 };

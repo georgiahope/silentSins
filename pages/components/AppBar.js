@@ -13,11 +13,6 @@ import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 
-
-const pages = ['Products', 'Lookbook', 'Contact Us'];
-
-
-
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -64,21 +59,6 @@ const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="fixed" sx={{backgroundColor: '#9f3133'}}>
       <Container maxWidth="xl" margin='0'>
@@ -115,9 +95,9 @@ const ResponsiveAppBar = () => {
               <Button>
                 <Typography
                 component="a"
-                href="/"
+                href="../Products"
                 sx={{
-                  fontFamily: 'monospacr',
+                  fontFamily: 'monotone',
                   textTransform: 'uppercase',
                   color: '#ffff'
                 }}>
@@ -153,7 +133,7 @@ const ResponsiveAppBar = () => {
             
           </Box>
           
-          <Box sx={{ flexGrow: 50, display: { xs: 'none', md: 'flex' }, mb: 1 }}>
+          <Box sx={{ flexGrow: 50, display: { xs: 'none', md: 'flex' } }}>
 
               <a href="https://www.instagram.com/mysilentsins/">
                 <InstagramIcon/>
