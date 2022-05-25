@@ -4,6 +4,21 @@ import Image from 'next/image'
 import type { ReactElement } from 'react'
 import styles from '../styles/Home.module.css'
 import ResponsiveAppBar from './/components/AppBar.js'
+import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="/">
+        SilentSins
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const Home: NextPage = () => {
   return (
@@ -55,17 +70,8 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className={styles.footer2}>
+        <Copyright />
       </footer>
     </div>
   )
