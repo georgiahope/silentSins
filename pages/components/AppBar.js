@@ -108,7 +108,7 @@ const ResponsiveAppBar = () => {
               <Button>
                 <Typography
                 component="a"
-                href="/"
+                href="../Lookbook"
                 sx={{
                   fontFamily: 'monotone',
                   textTransform: 'uppercase',
