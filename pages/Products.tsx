@@ -105,21 +105,20 @@ export default function ProductAlbum() {
                 >
                   <CardMedia
                     component="img"
-                    image="https://source.unsplash.com/random"
-                    alt="random"
+                    image="https://items-images-production.s3.us-west-2.amazonaws.com/files/77ed235e9a52a0e184ff119a3eb03b8d93d2a328/original.jpeg"
+                    alt="Red Tie-Dye/White Rose"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      White Rose Hoodie (Red Tie-Dye)
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      $38.00
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small">View</Button>
-                    <Button size="small">Order</Button>
+                    <Button href="https://square.link/u/TV7L97xO?src=embed" >Buy Now</Button>
                   </CardActions>
                 </Card>
               </Grid>
