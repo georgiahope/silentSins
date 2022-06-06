@@ -7,6 +7,8 @@ import ResponsiveAppBar from './/components/AppBar.js'
 import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
 import FrontVideo from './Dashboard'
+import Coming from './ComingSoon'
+import ComingSoonAppBar from './components/ComingSoonApp'
 
 function Copyright() {
   return (
@@ -32,10 +34,11 @@ const Home: NextPage = () => {
 
       <main>
         <h1>
-        <ResponsiveAppBar></ResponsiveAppBar>
+        {/*<ResponsiveAppBar></ResponsiveAppBar>*/}
+        <ComingSoonAppBar/>
         </h1>
 
-        <FrontVideo/>
+        <Coming/>
       </main>
     
       <footer className={styles.footer2}>
