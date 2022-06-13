@@ -15,9 +15,9 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Head from 'next/Head'
-import styles from '../styles/Home.module.css'
-import ResponsiveAppBar from './components/AppBar'
+import Head from 'next/Head';
+import styles from '../styles/Home.module.css';
+import ResponsiveAppBar from './components/AppBar';
 
 function Header(){
     return(

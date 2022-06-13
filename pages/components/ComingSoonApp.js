@@ -76,22 +76,21 @@ const ComingSoonAppBar = () => {
             component="a"
             href="/"
             sx={{
-              mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monotone',
               textTransform: 'uppercase',
               fontWeight: 700,
-              letterSpacing: '.7rem',
+              letterSpacing: '.55rem',
               lineheight: '14',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            Silent Sins
+            Silent Sins 
           </Typography>
             
 
-          <Box sx={{ ml: 120, flexGrow: 0 }}>
+          <Box sx={{ ml: 120}}>
             <a href="https://www.instagram.com/mysilentsins/">
                 <InstagramIcon/>
               </a>
